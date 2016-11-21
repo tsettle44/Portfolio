@@ -1,1 +1,216 @@
-"hello" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>HTML Portfolio</title>
+  <style>
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  /* CUSTOMIZED CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 240px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 240px;
+  }
+
+  @media (min-width: 768px) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+  }
+
+  /* MARKETING
+  -------------------------------------------------- */
+
+  .marketing {
+    margin: 60px auto;
+
+  }
+
+  .marketing .col-md-4 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .marketing .col-md-4 .glyphicon {
+    font-size: 60px;
+    background-color: #EAEAEA;
+    border-radius: 50%;
+    padding: 40px;
+    color: #444;
+  }
+
+
+  /* STICKY FOOTER
+  -------------------------------------------------- */
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 160px;
+  }
+
+  .footer,
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 160px;
+    background: #444;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 40px 0;
+  }
+
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Tom Settle</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Who I am</h1>
+          <p>Student at Indiana University</p>
+          <p>Kelley School of Business</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Interests</h1>
+            <p>-Cycling...Web-Development...Technology-</div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Social Media</h1>
+          <p><a href="https://www.instagram.com/t_settt/">Instagram</a>
+            <a href="https://twitter.com/tsettle44">Twitter</a>
+            <a href="https://www.youtube.com/channel/UCjAO5Zp3nefaGBBe1W7UGXA">Youtube</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="marketing">
+  <footer>
+  <div class="container">
+    <h3>Contact Me</h3>
+    <p>
+      Email me at tbsettle@indiana.edu
+    </p>
+  </div></footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-camera"></span>
+        <h2>photography</h2>
+        <p>
+          photography
+        </p>
+      </div>
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-music"></span>
+          <h2>music</h2>
+          <p>
+            music
+          </p>
+      </div>
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon-cloud"></span>
+            <h2>cloud</h2>
+            <p>
+              cloud
+            </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
