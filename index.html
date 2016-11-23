@@ -30,16 +30,19 @@
 .navbar-header a {
   padding-left: 30px;
 }
-.carousel,
-.item,
-.active {
-    height: 200%;
+.paddleboard img{
+  width:100%;
+  height: auto;
 }
-
-.carousel-inner {
-    height: 200%;
+.ski img{
+  width: 100%;
 }
-
+.sunset img{
+  width: 100%;
+}
+.glyphicon.glyphicon-film.h2float.pfloat{
+  float:right;
+}
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
@@ -80,47 +83,9 @@
     <!-- /.container-fluid -->
   </nav>
    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url(images/Optimized-ski.jpg);"></div>
-                <div class="carousel-caption">
-
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url(images/Optimized-sunset.jpg);"></div>
-                <div class="carousel-caption">
-
-                </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url(images/Optimized-bike.jpg);"></div>
-                <div class="carousel-caption">
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-		</header>
+  <div class="paddleboard">
+    <img src="images/paddleboard.jpg" alt="">
+  </div>
 
 
 <div class="marketing">
@@ -142,10 +107,19 @@
 		  build my own websites in the near future.
         </p>
       </div>
+    </div>
+  </div>
+</div>
+  <div class="ski">
+    <img src="images/ski1.jpg" alt="">
+  </div>
+<div class="marketing">
+  <div class="container">
+    <div class="row">
         <div class="col-md-4">
           <span class="glyphicon glyphicon-film"></span>
-          <h2>Video Production</h2>
-          <p>
+          <h2 class="h2float">Video Production</h2>
+          <p class="pfloat">
             Love to shoot videos and take pictures on summer weekends
 			at the lake or weekend excursions. Use a combiniation of GoPro and
 			 iPhone 7plus cameras and publish photos
@@ -154,6 +128,15 @@
 			 YouTube</a>.
           </p>
       </div>
+    </div>
+  </div>
+</div>
+  <div class="sunset">
+    <img src="images/sunset.jpg" alt="">
+  </div>
+<div class="marketing">
+  <div class="container">
+    <div class="row">
           <div class="col-md-4">
             <span class="glyphicon glyphicon-road"></span>
             <h2>Cycling</h2>
