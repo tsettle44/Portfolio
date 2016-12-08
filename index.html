@@ -1,193 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
-  <title>HTML Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <style>
-.navbar {
-  background-color: ;
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom Settle</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+
+    <style>
+
+.frontpage{
+  width: 100%;
+  background-image: url("images/webdevo.jpg");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.navbar-brand {
-  font-weight: bold;
+.fptext {
+  text-align: center;
+  position: relative;;
+  top: 250px;
 }
-.navbar-header img{
+#name {
+  font-size: 2.5em;
+  font-family: Impact, Charcoal, sans-serif;
+  font-weight: 400;
+  color: black;
+  border-bottom: 2px solid white;
+}
+#title {
+  font-size: 1.5em;
+  color: black;
+  font-family: Impact, Charcoal, sans-serif;
+}
+.box {
+  background-color:
+#898b8f;
+}
+.border {
+  padding-bottom: 20;
+  width: 75%;
+  margin: 0 auto;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  height: 350px;
+}
+.margintop {
   margin-top: 10px;
-  float: left;
-  height: auto;
-    width: 100%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
 }
-.navbar-header a {
-  padding-left: 30px;
-}
-.paddleboard{
-  background: url(images/paddleboard.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
+.projects {
+  text-align: center;
+  font-size: 2.0em;
+  font-family: impact,Black,sans-serif;
 }
 
-.paddleboard span h1{
-  font-family: futura,arial,sans-serif;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.5);
+.coming {
+  margin: 0 auto;
+  background-color: white;
+  background-image: url("images/comingsoon.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
-.paddleboard p {
-  font-weight: lighter;
-  font-style: italic;
-}
-
-.ski img{
-  width: 100%;
-}
-.sunset img{
-  width: 100%;
-}
-.glyphicon.glyphicon-film.h2float.pfloat{
-  float:right;
+.marginbottom {
+  margin-bottom: 10px;
 }
 
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse">
 
-/* Background images are set within the HTML using inline CSS, not here */
-
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <img src="images/portrait.jpg">
-        <a class="navbar-brand" href="#">Tom Settle</a>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">Tom Settle</a>
+          <button type="button" class="navbar-toggle collapsed"
+           data-toggle="collapse" data-target=".navbar-collapse"
+           aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-   <!-- Full Page Image Background Carousel Header -->
+<div class="container">
 
-  <div background="images/paddleboard.jpg" class="paddleboard">
-    <span>
-      <h1>Tom Settle</h1>
-      <h3>Freelance Web Developer / Student</h3>
-      <p>I am currently a student at Indiana University studying
-        Information Systems in the Kelley School of Business.
-      I am pursuing a freelance web development career on the side and
-    am learning all the neccesary front end tools necessary. As of now am
-  still in the learning phase of web development but hope to use this site
-as a portfolio of my work in the near future. </p>
-<p>If you have an questions you
-can contact with my email below.</p>
-    </span>
+  <div class="frontpage">
+
+    <div class="fptext">
+
+    <p id="name">Tom Settle</p>
+    <p id="title">Web Development Portfolio</p>
+
   </div>
 
+    <div class="border"></div>
 
+  </div>
 
+  <div class="margintop projects">
+    <p>Projects</p>
+  </div>
+</div>
 
-  <div class="marketing">
-  <footer>
-  <div class="container">
-    <h3>Contact Me</h3>
-    <p>
-      Email me at tbsettle@indiana.edu
-    </p>
-  </div></footer>
-  <div class="container">
+  <div class="box margintop">
+    <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <span class="glyphicon glyphicon-search"></span>
-        <h2>Web Development</h2>
-        <p>
-          Self taught myself front-end development in HTML and CSS,
-		  currently learing javascript and hoping to eventually start to
-		  build my own websites in the near future.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="ski">
-    <img src="images/ski1.jpg" alt="">
-  </div>
-<div class="marketing">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          <span class="glyphicon glyphicon-film"></span>
-          <h2 class="h2float">Video Production</h2>
-          <p class="pfloat">
-            Love to shoot videos and take pictures on summer weekends
-			at the lake or weekend excursions. Use a combiniation of GoPro and
-			 iPhone 7plus cameras and publish photos
-			 on <a href="https://www.instagram.com/t_settt/">Instagram</a>
-			 and <a href="https://www.youtube.com/channel/UCjAO5Zp3nefaGBBe1W7UGXA">
-			 YouTube</a>.
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="sunset">
-    <img src="images/sunset.jpg" alt="">
-  </div>
-<div class="marketing">
-  <div class="container">
-    <div class="row">
-          <div class="col-md-4">
-            <span class="glyphicon glyphicon-road"></span>
-            <h2>Cycling</h2>
-            <p>
-              Been a fitness nut my whole life and rercently started cycling. Initially
-			  started recreationally, but know am apart of the Sigma Phi Epsilon Little 500
-			  Cycling Team at IU and train year round. Love being outdoors and getting lost
-			  on the bike on weekends.
-            </p>
+        <div class="coming margintop">
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="coming margintop">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="coming margintop marginbottom">
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
 
 
+  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+        $(".frontpage").css("height",$(window).height());
+
+        $(".coming").hover(
+          // Mouse Over
+  function(){
+    $(this).animate({width: 375,height: 375});
+  },
+          // Mouse Out
+  function(){
+      $(this).animate({width: 350,height: 350});
+});
+
+
+    </script>
+  </body>
 </html>
