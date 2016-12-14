@@ -113,25 +113,41 @@ a {
 #aboutme p{
   padding: 10px;
 }
-#ski img{
-  float: none;
-  width: 100%;
-  height: 400px;
-  border-radius: 10px;
+.paddleboard img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+        }
+.section3 {
+  background-color:#e6e6e6;
+  text-align: center;
 }
-#bike img{
-  float: none;
-  width: 100%;
-    height: 400px;
-    border-radius: 10px;
+.glyphicon {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
 }
-#sunset img{
-  float: none;
-  width: 100%;
-    height: 400px;
-    border-radius: 10px;
+.emailadd {
+  padding-left: 10px;
+  display: inline;
+  font-style: italic;
 }
-
+.links img{
+  width: 75px;
+  height: 75px;
+  opacity: 1.0;
+}
+.footer {
+  height: 50px;
+  background-color: #666;
+  width: 100%;
+}
+.footer p{
+  color: white;
+  padding-top: 15px;
+  padding-left: 5px;
+}
 
     </style>
   </head>
@@ -223,24 +239,43 @@ a {
           <p> If you have any questions or possible work to be done. Contact me below!
           </p>
       </div>
-      <div class="row marginbottom">
-        <div class="col-md-4" id="ski">
-          <div class="pictures">
-            <img src="images/ski.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-4" id="bike">
-          <div class="pictures">
-            <img src="images/bike.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-4" id="sunset">
-          <div class="pictures">
-            <img src="images/sunset.jpg" alt="">
-          </div>
-        </div>
+
+        <div class="paddleboard marginbottom">
+            <img src="images/paddleboard.JPG">
+
       </div>
   </div>
+</div>
+
+<div id="Contactid">
+  <div class="margintop projects">Contact Me</div>
+</div>
+<div class="section3 margintop">
+  <div class="container-fluid">
+    <div class="mail margintop marginbottom">
+      <span class="glyphicon glyphicon-envelope"> Email: <p class="emailadd">tsettle44@gmail.com</p></span>
+    </div>
+    <div class="row links">
+      <div class="col-md-4 twitter margintop marginbottom">
+        <a class="linkimg" href="https://twitter.com/tsettle44"><img src="images/twitter.png"
+          alt=""></a>
+      </div>
+      <div class="col-md-4 insta margintop marginbottom">
+        <a class="linkimg" href="https://www.instagram.com/t_settt/"><img src="images/instagram.png"
+          alt=""></a>
+      </div>
+      <div class="col-md-4 github margintop marginbottom">
+        <a class="linkimg" href="https://github.com/tsettle44"><img src="images/github.png"
+          alt=""></a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p> Website designed and developed by Tom Settle</p>
 </div>
 
 
@@ -255,7 +290,7 @@ a {
     <script>
 
 
-        $(".frontpage").css("height",$(window).height());
+        $(".frontpage").css("height",$(window).height()+ 20);
 
         $(".coming").hover(
           // Mouse Over
@@ -278,6 +313,12 @@ $('a[href*="#"]:not([href="#"])').click(function() {
       return false;
     }
   }
+});
+
+$(".linkimg").hover(function(){
+  $(this).css("opacity","0.5");
+}, function(){
+  $(this).css("opacity","1.0");
 });
 
 
