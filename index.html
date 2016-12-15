@@ -62,15 +62,18 @@
     <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
-        <div class="coming margintop marginbottom">
+        <div class="hover landing margintop marginbottom">
+          <p class="landingtxt">Landing Page</p>
+          <a href="https://tsettle44.github.io/LandingPage/" >
+            <img src="images/LandingPage.png" alt=""></a>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="coming marginbottom">
+        <div class="hover coming marginbottom">
         </div>
       </div>
       <div class="col-md-4">
-        <div class="coming marginbottom">
+        <div class="hover coming marginbottom">
         </div>
       </div>
     </div>
@@ -153,7 +156,7 @@
 
         $(".frontpage").css("height",$(window).height()+ 20);
 
-        $(".coming").hover(
+        $(".hover").hover(
           // Mouse Over
   function(){
     $(this).animate({width: 375,height: 375});
@@ -162,6 +165,29 @@
   function(){
       $(this).animate({width: 350,height: 350});
 });
+
+$(".landing").hover(
+  // Mouse Over
+function(){
+$(".landing p").animate({fontsize:'2.0em'});
+},
+  // Mouse Out
+function(){
+$(".landing p").animate({fontsize:'1.5em'});
+});
+
+$(".landing").hover(
+  // Mouse Over
+function(){
+$(".landing img").animate({width: 355,height: 325});
+},
+  // Mouse Out
+function(){
+$(".landing img").animate({width: 330, height: 300});
+});
+
+
+
 
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -56,6 +56,29 @@
   border-radius: 20px;
   margin-top: 10px;
 }
+.hover {
+  margin: 0 auto;
+  background-color: white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.hover img {
+  width: 330px;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.landingtxt {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+}
 .marginbottom {
   margin-bottom: 10px;
 }
