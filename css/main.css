@@ -8,7 +8,7 @@
 }
 .fptext {
   text-align: center;
-  position: relative;;
+  position: relative;
   top: 250px;
 }
 #name {
@@ -157,4 +157,37 @@ a {
   color: white;
   padding-top: 15px;
   padding-left: 5px;
+}
+.blogcontainer {
+  margin: 0 auto;
+  width: 500px;
+}
+.blogcontainer img{
+  width: 500px;
+  height: 150px;
+}
+.blogp {
+  text-align: center;
+  padding-bottom: 5px;
+}
+#blogbtn{
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  background-color: #666;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 1.0;
+}
+#blogbtn p{
+  color: white;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+.navbar-brand img{
+  width: 100px;
+  height: 40px;
+  position: relative;
+  bottom: 10px;
 }
